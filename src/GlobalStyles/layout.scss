@@ -1,0 +1,29 @@
+@import './mediaQuerys.scss';
+
+.layout{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 50px;
+    justify-items: center;
+    @include respond-to(desktop-L){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+    @include respond-to(tablet){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.h1{
+    text-align: center;
+}
+
+.container{
+    @include respond-to(tablet){
+        margin-top: -40px;
+    }
+}

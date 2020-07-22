@@ -1,0 +1,13 @@
+@import '../../GlobalStyles/variables.scss';
+@import '../../GlobalStyles/mediaQuerys.scss';
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $color-title;
+    height: 120px;
+    color: white;
+    &__img{
+        @include respond-to(mobile-big){width: 300px;}
+    }
+}

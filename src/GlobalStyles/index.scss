@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+body{
+    margin: 0;
+    background-color:$color-body;
+    scroll-behavior: smooth;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}

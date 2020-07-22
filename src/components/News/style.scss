@@ -1,0 +1,30 @@
+@import '../../GlobalStyles/variables.scss';
+@import '../../GlobalStyles/mediaQuerys.scss';
+
+.news{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    &__img{
+        width: 250px;
+        @include respond-to(desktop){ width: 200px; }
+        @include respond-to(mobile-big){ width: 150px; }
+        @include respond-to(mobile-small){ width: 140px; }
+    }
+    &__ancla{
+        text-decoration: none;
+        color: $color-title;
+    }
+    &__ancla p{
+        color: $color-parrafo;
+        font-size: .9em;
+        line-height: 18px;
+    }
+    @include respond-to(desktop){ width: 200px; }
+    @include respond-to(mobile-big){ width: 150px; }
+    @include respond-to(mobile-small){ width: 140px; }
+}
+
+.news:hover{
+    background-color: rgba($color: $color-hover, $alpha: .1);
+}
